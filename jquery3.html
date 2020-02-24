@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery03</title>
+</head>
+<body>
+	<p>Hello team</p>
+	<p>Learn Jquery</p>
+	<button id="hide">Click to hide me</button>
+	<button id="show">Click to show me</button>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#hide").click(function(){
+			$("p").hide();
+		});
+		$("#show").click(function(){
+			$("p").show();
+		});
+	});
+</script>
+	
+
+</html>

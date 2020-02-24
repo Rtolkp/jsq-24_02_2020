@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery01</title>
+</head>
+<body>
+	<p>Hello team</p>
+	<p>Learn Jquery</p>
+	<button id="t">Click to hide me</button>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#t").click(function(){
+			$("p").toggle();
+		});
+	});
+</script>
+</html>

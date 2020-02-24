@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery01</title>
+	<style>
+		div{
+			background-color: yellow;
+			height: 100px;
+			width: 100px;
+			color:green;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+	<button id="up"> click to slide up</button>
+	<button id="down">Click to slide down</button>
+		<button id="toggle">Click to slide toggle</button>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#up").click(function(){
+			$("div").slideUp();
+		});
+	
+		$("#down").click(function(){
+			$("div").slideDown();
+		});
+		$("#toggle").click(function(){
+			$("div").slideToggle();
+		});
+	});
+</script>
+</html>
